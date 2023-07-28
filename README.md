@@ -33,13 +33,13 @@
 ## Visuals
 Some examples of using the slash commands
 - /create Costco
-[/create](/src/main/resources/Images/create-shop.png)
+![/create](/src/main/resources/Images/create-shop.png)
 - /add Cheese, /add Basmati Rice, /add Chicken Breast, /add Eggs
-[/add](/src/main/resources/Images/add-items.png)
+![/add](/src/main/resources/Images/add-items.png)
 - /update Costco Cheese PepperJ Jack Cheese
-[/update](/src/main/resources/Images/update-cheese.png)
+![/update](/src/main/resources/Images/update-cheese.png)
 - /remove Costco Eggs
-[/remove](/src/main/resources/Images/remove-eggs.png)
+![/remove](/src/main/resources/Images/remove-eggs.png)
 
 ## Roadmap
 - Host the application on some server to ensure the bot is running during specific times of day
