@@ -38,7 +38,7 @@ Some examples of using the slash commands
 - /add Cheese, /add Basmati Rice, /add Chicken Breast, /add Eggs
   - ![/add](/src/main/resources/Images/add-items.png)
 
-- /update Costco Cheese PepperJ Jack Cheese
+- /update Costco Cheese Pepper Jack Cheese
   - ![/update](/src/main/resources/Images/update-cheese.png)
   
 - /remove Costco Eggs
