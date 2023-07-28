@@ -30,6 +30,17 @@
 ## Usage
 - All instances are saved in-memory. Once you quit the application, your instances will disappear
 
+## Visuals
+Some examples of using the slash commands
+- /create Costco
+[/create](/src/main/resources/Images/create-shop.png)
+- /add Cheese, /add Basmati Rice, /add Chicken Breast, /add Eggs
+[/add](/src/main/resources/Images/add-items.png)
+- /update Costco Cheese PepperJ Jack Cheese
+[/update](/src/main/resources/Images/update-cheese.png)
+- /remove Costco Eggs
+[/remove](/src/main/resources/Images/remove-eggs.png)
+
 ## Roadmap
 - Host the application on some server to ensure the bot is running during specific times of day
 - Being able to delete a Shopping List by reacting to the embedded link's "X" unicode emoji
