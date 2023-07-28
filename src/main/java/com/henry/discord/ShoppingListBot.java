@@ -20,7 +20,7 @@ public class ShoppingListBot {
 
     public static void main(String[] args) {
         // Our bot token from Discord
-        String token = "MTEzMzUyMDc2Njg2OTE4NDU5Mg.GulwV5.Hu6cCiIAeP2KcPtAk5NT1Sc6S9uXCWywby-U38";
+        String token = System.getenv("token");
 
         // Allows us to access Javacord's API using our token
         DiscordApi api = new DiscordApiBuilder().setToken(token).login().join();
