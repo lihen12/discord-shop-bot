@@ -73,6 +73,13 @@ public class ShoppingListBot {
                 .createGlobal(api)
                 .join();
 
+        // Create slash command for help
+        new SlashCommandBuilder()
+                .setName("help")
+                .setDescription("List all commands")
+                .createGlobal(api)
+                .join();
+
         // Listen for slash command create
         api.addSlashCommandCreateListener(event -> {
             if (event.getSlashCommandInteraction().getCommandName().equals("create")) {
@@ -290,6 +297,25 @@ public class ShoppingListBot {
                                 .send(textChannel));
                     }
                 });
+            }
+        });
+
+        // Listen for slash command help
+        api.addSlashCommandCreateListener(event -> {
+            if (event.getSlashCommandInteraction().getCommandName().equals("help")) {
+                // Acknowledge the interaction immediately
+                event.getSlashCommandInteraction().createImmediateResponder().respond();
+
+                // Send a message with the description of all commands
+                new MessageBuilder()
+                        .setContent("Here are all the commands:\n" +
+                                "**/create [store]**: Create a new shopping list for a store\n" +
+                                "**/add [store] [item]**: Add an item to a shopping list for a store\n" +
+                                "**/delete [store]**: Delete a shopping list for a store\n" +
+                                "**/remove [store] [item]**: Remove an item from a shopping list for a store\n" +
+                                "**/update [store] [oldItem] [newItem]**: Update an item in a shopping list for a store\n" +
+                                "**/view [store]**: View the shopping list for a store")
+                        .send(event.getSlashCommandInteraction().getChannel().get());
             }
         });
     }
